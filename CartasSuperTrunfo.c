@@ -1,15 +1,67 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
+// Desafio Super Trunfo - Paíse
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  // Área para entrada de dados
+  //inicio do desafio no modo novato.
+  //introduçao das informacoes iniciais do primeiro e do segundo pais, utilizando int, char e float para entrada de dados.
+  char carta[50], carta2[50];
+  char nome[50], nome2[50];
+  char codigo_da_carta[10], codigodacarta[30];
+  char nome_da_cidade[50], nomedacidade[50];
+  int populaçao, populacao2;
+  float area_em_kms, areaemkms2;
+  float PIB, PIB2;
+  int numerodepontosturisticos, numerodepontosturisticos2;
 
-  // Área para exibição dos dados da cidade
+  //introducao dos conteudos das cartas do primeiro pais utilizando printf para exibir as informaçoes e scanf para entrada de dados.
+  printf("digite o nome da carta: \n");
+  scanf("%s", carta);
+  printf("digite o nome do estado: \n");
+  scanf("%s", nome);
+  printf("digite o codigo da carta: \n");
+  scanf("%s", codigo_da_carta);
+  printf("digite o nome da cidade: \n");
+  scanf("%s", nome_da_cidade);
+  printf("digite a quantidade da populaçao: \n");
+  scanf("%d", &populaçao);
+  printf("digite a area em kms: \n");
+  scanf("%f", &area_em_kms);
+  printf("digite o PIB: \n");
+  scanf("%f", &PIB);
+  printf("digite o numero de pontos turisticos: \n");
+  scanf("%d", &numerodepontosturisticos);
 
-return 0;
+  // Área para exibição dos dados da cidade1 em printfs.
+  printf("carta01: %s\n estado: %s\n", carta, nome);
+  printf("codigo da carta: %s\n nome da cidade: %s\n", codigo_da_carta, nome_da_cidade);
+  printf("populacao: %d\n area em kms: %.5f\n PIB: %.5f\n numero de pontos turisticos: %d\n", populaçao, area_em_kms, PIB, numerodepontosturisticos);
+
+  //introduçao dos conteudos das cartas do segundo pais, utilizando printf para exibir as informaçoes e scanf para entrada de dados.
+  printf("digite o nome da carta2: \n");
+  scanf("%s", carta2);
+  printf("digite o nome do estado2: \n");
+  scanf("%s", nome2);
+  printf("digite o codigo da carta2: \n");
+  scanf("%s", codigodacarta);
+  printf("digite o nome da cidade2: \n");
+  scanf("%s", nomedacidade);
+  printf("digite a quantidade da populaçao2: \n");
+  scanf("%d", &populacao2);
+  printf("digite a area em kms2: \n");
+  scanf("%f", &areaemkms2);
+  printf("digite o PIB2: \n");
+  scanf("%f", &PIB2);
+  printf("digite o numero de pontos turisticos2: \n");
+  scanf("%d", &numerodepontosturisticos2);
+
+  // Área para exibição dos dados da segundo pais em printfs.
+  printf("carta02: %s\n estado: %s\n", carta2, nome2);
+  printf("codigo da carta: %s\n nome da cidade: %s\n", codigodacarta, nomedacidade);
+  printf("populacao: %d\n area em kms: %.5f\n PIB: %.5f\n numero de pontos turisticos: %d\n", populacao2, areaemkms2, PIB2, numerodepontosturisticos2);
+
+  return 0;
 } 
