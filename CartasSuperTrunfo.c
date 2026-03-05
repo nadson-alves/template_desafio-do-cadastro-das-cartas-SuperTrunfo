@@ -80,12 +80,21 @@ int main() {
   printf("densidade populacional2: %.5f\n PIB per capita2: %.5f\n", densidade_populacional2, pib_percapita2);
   printf("super poder2: %.5f\n", SUPERPODER2);
 
-  //comparacao dos atributos das cartas para determinar qual carta tem o maior poder.
+  //comparacao dos atributos totais das cartas para determinar qual carta tem o maior poder final.
   printf("valor da carta1 (%.5f) é maior que da carta2 (%.5f)? %d \n", populaçao + area_em_kms + PIB + numerodepontosturisticos + densidade_populacional1 + pib_percapita1 + SUPERPODER1
     , populacao2 + areaemkms2 + PIB2 + numerodepontosturisticos2 + densidade_populacional2 + pib_percapita2 + SUPERPODER2,
                  (populaçao + area_em_kms + PIB + numerodepontosturisticos + densidade_populacional1 + pib_percapita1 + SUPERPODER1) > 
-                 (populacao2 + areaemkms2 + PIB2 + numerodepontosturisticos2 + densidade_populacional2 + pib_percapita2 + SUPERPODER2)                                                                  
+                 (populacao2 + areaemkms2 + PIB2 + numerodepontosturisticos2 + densidade_populacional2 + pib_percapita2 + SUPERPODER2) 
+
 );
+//comparacao de todos os atributos individuais para determinar qual carta tem o maior poder.
+  printf("populaçao da carta1 é maior que da carta2? %d \n", populaçao > populacao2);
+  printf("area em kms da carta1 é maior que da carta2? %d \n", area_em_kms > areaemkms2); 
+  printf("PIB da carta1 é maior que da carta2? %d \n", PIB > PIB2);
+  printf("numero de pontos turisticos da carta1 é maior que da carta2? %d \n", numerodepontosturisticos > numerodepontosturisticos2); 
+  printf("densidade populacional da carta1 é maior que da carta2? %d \n", densidade_populacional1 > densidade_populacional2);
+  printf("PIB per capita da carta1 é maior que da carta2? %d \n", pib_percapita1 > pib_percapita2);
+  printf("super poder da carta1 é maior que da carta2? %d \n", SUPERPODER1 > SUPERPODER2);
 
   return 0;
 } 
