@@ -96,5 +96,57 @@ int main() {
   printf("PIB per capita da carta1 é maior que da carta2? %d \n", pib_percapita1 > pib_percapita2);
   printf("super poder da carta1 é maior que da carta2? %d \n", SUPERPODER1 > SUPERPODER2);
 
-  return 0;
+  //comparacao usando o if e o else para determinar qual carta tem o maior poder final.
+  if (SUPERPODER1 > SUPERPODER2) {
+    printf("A carta1 tem o maior poder final.\n");
+  } else if (SUPERPODER1 < SUPERPODER2) {
+    printf("A carta2 tem o maior poder final.\n");
+  } else {
+    printf("As cartas têm o mesmo poder final.\n");
+  } 
+if (populaçao > populacao2) {
+    printf("A carta1 tem a maior populaçao.\n");
+  } else if (populaçao < populacao2) {
+    printf("A carta2 tem a maior populaçao.\n");
+  } else {
+    printf("As cartas têm a mesma populaçao.\n");
+  }
+if (area_em_kms > areaemkms2) {
+    printf("A carta1 tem a maior area em kms.\n"); 
+  } else if (area_em_kms < areaemkms2) {
+    printf("A carta2 tem a maior area em kms.\n");
+  } else {  
+    printf("As cartas têm a mesma area em kms.\n");
+  }
+if (PIB > PIB2) {   
+    printf("A carta1 tem o maior PIB.\n");
+  } else if (PIB < PIB2) {
+    printf("A carta2 tem o maior PIB.\n");
+  } else {
+    printf("As cartas têm o mesmo PIB.\n");
+  }
+if (numerodepontosturisticos > numerodepontosturisticos2) {
+    printf("A carta1 tem o maior numero de pontos turisticos.\n");
+  } else if (numerodepontosturisticos < numerodepontosturisticos2) {
+    printf("A carta2 tem o maior numero de pontos turisticos.\n");
+  } else {
+    printf("As cartas têm o mesmo numero de pontos turisticos.\n");
+  }
+if (densidade_populacional1 > densidade_populacional2) {
+    printf("A carta1 tem a maior densidade populacional.\n");
+  } else if (densidade_populacional1 < densidade_populacional2) {
+    printf("A carta2 tem a maior densidade populacional.\n");
+  } else {
+    printf("As cartas têm a mesma densidade populacional.\n");
+  }
+if (pib_percapita1 > pib_percapita2) {
+    printf("A carta1 tem o maior PIB per capita.\n");
+  } else if (pib_percapita1 < pib_percapita2) {
+    printf("A carta2 tem o maior PIB per capita.\n");
+  } else {
+    printf("As cartas têm o mesmo PIB per capita.\n");
+  }
+  
+  
+ return 0;
 } 
