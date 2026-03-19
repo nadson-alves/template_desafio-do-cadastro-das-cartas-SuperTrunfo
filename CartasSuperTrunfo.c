@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 // Desafio Super Trunfo - Paíse
 // Tema 1 - Cadastro das cartas
@@ -8,10 +10,10 @@ int main() {
 
   //inicio do desafio no modo mestre.
   //introduçao das informacoes iniciais do primeiro e do segundo pais, utilizando int, char e float para entrada de dados.
-  char carta[50], carta2[50];
-  char nome[50], nome2[50];
-  char codigo_da_carta[30], codigodacarta[30];
-  char nome_da_cidade[50], nomedacidade[50];
+  char carta[50] = "brasil", carta2[50] = "argentina";
+  char nome[50] = "ceara", nome2[50] = "buenos aires";
+  char codigo_da_carta[30] = "C001", codigodacarta[30] = "C002";
+  char nome_da_cidade[50] = "fortaleza", nomedacidade[50] = "rosario";
   int populaçao, populacao2;
   float area_em_kms, areaemkms2;
   float PIB, PIB2;
@@ -21,14 +23,10 @@ int main() {
   float SUPERPODER1, SUPERPODER2;
 
   //introducao dos conteudos das cartas do primeiro pais utilizando printf para exibir as informaçoes e scanf para entrada de dados.
-  printf("digite o nome da carta: \n");
-  scanf("%s", carta);
-  printf("digite o nome do estado: \n");
-  scanf("%s", nome);
-  printf("digite o codigo da carta: \n");
-  scanf("%s", codigo_da_carta);
-  printf("digite o nome da cidade: \n");
-  scanf("%s", nome_da_cidade);
+  printf("nome da carta: %s \n", carta);
+  printf("nome do estado: %s \n", nome);
+  printf("codigo da carta: %s \n", codigo_da_carta);
+  printf("o nome da cidade: %s \n", nome_da_cidade);
   printf("digite a quantidade da populaçao: \n");
   scanf("%d", &populaçao);
   printf("digite a area em kms: \n");
@@ -51,14 +49,10 @@ int main() {
   printf("super poder: %.5f\n", SUPERPODER1);
 
   //introduçao dos conteudos das cartas do segundo pais, utilizando printf para exibir as informaçoes e scanf para entrada de dados.
-  printf("digite o nome da carta2: \n");
-  scanf("%s", carta2);
-  printf("digite o nome do estado2: \n");
-  scanf("%s", nome2);
-  printf("digite o codigo da carta2: \n");
-  scanf("%s", codigodacarta);
-  printf("digite o nome da cidade2: \n");
-  scanf("%s", nomedacidade);
+  printf("nome da carta2: %s \n", carta2);
+  printf("nome do estado2: %s \n", nome2);
+  printf("codigo da carta2: %s \n", codigodacarta);
+  printf("nome da cidade2: %s \n", nomedacidade);
   printf("digite a quantidade da populaçao2: \n");
   scanf("%d", &populacao2);
   printf("digite a area em kms2: \n");
@@ -146,7 +140,10 @@ if (pib_percapita1 > pib_percapita2) {
   } else {
     printf("As cartas têm o mesmo PIB per capita.\n");
   }
-  
+  //Comparacao usando switch para determinar qual carta tem o maior poder final.
+
   
  return 0;
+
+
 } 
